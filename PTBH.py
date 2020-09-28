@@ -39,27 +39,27 @@ stringKQ=StringVar()
 
 root.title("Giai Phuong Trinh Bac 2")
 root.resizable(height=True,width=True)
-root.minsize(height=150,width=250)
+root.minsize(height=220,width=470)
 
-Label(root,text="Phuong Trinh Bac Hai",fg="blue",font=("tahoma",16),justify=CENTER).grid(row=0,columnspan=2)
+Label(root,text="Phuong Trinh Bac Hai",fg="blue",font=("tahoma",20),justify=CENTER).grid(row=0,columnspan=2)
 
-Label(root,text="He so a:").grid(row=1,column=0)
-Entry(root,width=30,textvariable=stringHSA).grid(row=1,column=1)
+Label(root,text="He so a:",font=("tahoma",16)).grid(row=1,column=0)
+Entry(root,width=40,font=("tahoma",12),textvariable=stringHSA).grid(row=1,column=1)
 
-Label(root,text="He so b:").grid(row=2,column=0)
-Entry(root,width=30,textvariable=stringHSB).grid(row=2,column=1)
+Label(root,text="He so b:",font=("tahoma",16)).grid(row=2,column=0)
+Entry(root,width=40,font=("tahoma",12),textvariable=stringHSB).grid(row=2,column=1)
 
-Label(root,text="He so c:").grid(row=3,column=0)
-Entry(root,width=30,textvariable=stringHSC).grid(row=3,column=1)
+Label(root,text="He so c:",font=("tahoma",16)).grid(row=3,column=0)
+Entry(root,width=40,font=("tahoma",12),textvariable=stringHSC).grid(row=3,column=1)
 
 frameButton=Frame()
-Button(frameButton,text="Giai",command=solveEquation).pack(side=LEFT)
-Button(frameButton,text="Tiep",command=continueSolve).pack(side=LEFT)
-Button(frameButton,text="Thoat",command=root.quit).pack(side=LEFT)
+Button(frameButton,text="Giai",font=("tahoma",12),command=solveEquation).pack(side=LEFT)
+Button(frameButton,text="Tiep",font=("tahoma",12),command=continueSolve).pack(side=LEFT)
+Button(frameButton,text="Thoat",font=("tahoma",12),command=root.quit).pack(side=LEFT)
 frameButton.grid(row=4,columnspan=2,)
 
-Label(root,text="Ket qua:").grid(row=5,column=0)
-Entry(root,width=30,textvariable=stringKQ).grid(row=5,column=1)
+Label(root,text="Ket qua:",font=("tahoma",16)).grid(row=5,column=0)
+Entry(root,width=40,font=("tahoma",12),textvariable=stringKQ).grid(row=5,column=1)
 
 def makecenter(root):
 	root.update_idletasks()
